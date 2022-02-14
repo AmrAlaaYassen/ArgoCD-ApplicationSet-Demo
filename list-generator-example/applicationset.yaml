@@ -18,7 +18,7 @@ spec:
       source:
         repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
         targetRevision: HEAD
-        path: list-generator-example
+        path: list-generator-example/deployment
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'
