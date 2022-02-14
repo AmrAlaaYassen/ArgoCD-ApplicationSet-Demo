@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: color
+  name: color-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: color
+  template:
+    metadata:
+      labels:
+        app: color
+    spec:
+      containers:
+      - image: kodekloud/webapp-color
+        imagePullPolicy: Always
+        name: webapp-color
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+      restartPolicy: Always
