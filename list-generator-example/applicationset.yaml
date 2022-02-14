@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: color-applicaitonset
+  namespace: argocd
+spec:
+  generators:
+  - list:
+      elements:
+      - namespace: dev
+      - namespace: test
+      - namespace: uat
+  template:
+    metadata:
+      name: '{{namespace}}-color-app'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
+        targetRevision: HEAD
+        path: list-generator-example
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{namespace}}'
+
