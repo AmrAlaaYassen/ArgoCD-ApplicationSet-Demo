@@ -12,14 +12,18 @@ spec:
       - namespace: uat
   template:
     metadata:
+      # will generate applications with different names for example (dev-color-app, test-color-app, etc..)
       name: '{{namespace}}-color-app'
     spec:
+      # applications will be in default project for argocd
       project: default
       source:
         repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
         targetRevision: HEAD
         path: list-generator-example/deployment
       destination:
+        # default cluster as destination, you can define multiple clusters in ArgoCD UI
         server: https://kubernetes.default.svc
+        # will deploy to different namespaces as different destinations 
         namespace: '{{namespace}}'
 
