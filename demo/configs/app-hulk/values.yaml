@@ -1,0 +1,4 @@
+namespaces:
+  - prod
+  - staging
+  - qa

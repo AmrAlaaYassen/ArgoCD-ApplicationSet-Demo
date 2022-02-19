@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: test-full
+  namespace: argocd
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
+        revision: HEAD
+        directories:
+          - path: demo/configs/*/*
+  template:
+    metadata:
+      namespace: argocd
+      name: "{{path[2]}}-{{path.basename}}"
+    spec:
+      project: default
+      source:
+        helm:
+          valueFiles:
+            - "configs/{{path[2]}}/{{path.basename}}/values.yaml"
+        path: demo
+        repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
+        targetRevision: HEAD
+      syncPolicy:
+        automated:
+          prune: true
+      destination:
+        namespace: "{{path.basename}}"
+        server: https://kubernetes.default.svc
