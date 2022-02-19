@@ -2,3 +2,4 @@ namespaces:
   - prod
   - staging
   - qa
+name: spider
