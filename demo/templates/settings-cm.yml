@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Values.name }}
+  name: {{ .Values.name }}-settings
 data:
   settings.ini: |
     # possible values : production, development, staging, qa

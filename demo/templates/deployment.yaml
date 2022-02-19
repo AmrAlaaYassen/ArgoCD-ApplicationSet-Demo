@@ -43,5 +43,5 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: application-settings        
+            name: {{ .Values.name }}-settings        
        
