@@ -7,9 +7,7 @@
 This repository contains the examples and demos explaines in the article
 [How to create ArgoCD Applications Automatically using ApplicationSet? “Automation of the Gitops”](https://amralaayassen.medium.com/how-to-create-argocd-applications-automatically-using-applicationset-automation-of-the-gitops-59455eaf4f72)
 
-![architecture](https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo/tree/main/media/architecture.png)
-
-
+![architecture](https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo/blob/main/media/architecture.png)
 
 ---
 
