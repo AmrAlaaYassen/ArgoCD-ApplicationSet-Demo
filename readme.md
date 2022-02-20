@@ -18,14 +18,13 @@ This repository contains the examples and demos explaines in the article
 - [Prerequisites](#prerequisites)
     - [Kubernetes Cluster](#kubernetes-cluster)
     - [ArgoCD Installation](#argocd-installation)
-      - [ArgoCD ApplicationSet Installation](#argocd-applicationset-installation)
+    - [ArgoCD ApplicationSet Installation](#argocd-applicationset-installation)
     - [Add Repository to ArgoCD](#add-repository-to-argocd)
 - [List Generator](#list-generator)
 - [Git Directory](#git-directory)
 - [Demo](#demo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ---
 
 ### Prerequisites
