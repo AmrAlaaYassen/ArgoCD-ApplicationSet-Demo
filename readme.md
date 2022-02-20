@@ -48,7 +48,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 or check the [documentation](https://argo-cd.readthedocs.io/en/stable/)
 
-###### ArgoCD ApplicationSet Installation
+##### ArgoCD ApplicationSet Installation
 
 you need to install ApplicationSet alongside with argocd, some examples in this repository need a version > 0.3 make sure to use the latest image in your ApplicationSet Deployment
 
