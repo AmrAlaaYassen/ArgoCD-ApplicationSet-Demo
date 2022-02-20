@@ -16,13 +16,12 @@ This repository contains the examples and demos explaines in the article
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents** 
 
-  - [Prerequisites](#prerequisites)
-          - [Kubernetes Cluster](#kubernetes-cluster)
-          - [ArgoCD Installation](#argocd-installation)
-          - [ArgoCD ApplicationSet installation](#argocd-applicationset-installation)
+- [Prerequisites](#prerequisites)
+        - [Kubernetes Cluster](#kubernetes-cluster)
+        - [ArgoCD Installation](#argocd-installation)
+        - [ArgoCD ApplicationSet Installation](#argocd-applicationset-installation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 
 ---
  
