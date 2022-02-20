@@ -125,4 +125,5 @@ we have a directory tree like the one below
 ├── templates # helm templates to be used
 ├── chart.yaml # our chart file
 ```
+we have 3 different applications and we need to deploy them to 3 different environments `prod`, `staging`, and `qa` we have developed a common helm chart to be used for all of the 3 applications for each combination of application and environment we have different `values.yaml` files to be used alongside with our common helm chart, see diagram below
 ![architecture](https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo/blob/main/media/architecture.png)
