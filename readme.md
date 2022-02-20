@@ -17,15 +17,17 @@ This repository contains the examples and demos explaines in the article
 **Table of Contents** 
 
 - [Prerequisites](#prerequisites)
-        - [Kubernetes Cluster](#kubernetes-cluster)
-        - [ArgoCD Installation](#argocd-installation)
-        - [ArgoCD ApplicationSet Installation](#argocd-applicationset-installation)
+      - [Kubernetes Cluster](#kubernetes-cluster)
+      - [ArgoCD Installation](#argocd-installation)
+      - [ArgoCD ApplicationSet Installation](#argocd-applicationset-installation)
+- [List Generator Example](#list-generator-example)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
 ---
  
-## Prerequisites
+### Prerequisites
 ###### Kubernetes Cluster
 To be able to run the examples and demos in this repository you need to have a running Kubernetes cluster with `argocd` namespace
 
@@ -49,3 +51,5 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/applicatio
 ```
 
 or check the [documentation](https://argocd-applicationset.readthedocs.io/en/stable/)
+
+### List Generator Example
