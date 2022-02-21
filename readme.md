@@ -4,7 +4,7 @@
 ![Helm](https://img.shields.io/badge/-Helm-0F1689?style=for-the-badge&logo=Helm&logoColor=white)
 ![Argo](https://img.shields.io/badge/-ArgoCD-fe733d?style=for-the-badge&logo=&logoColor=white)
 
-This repository contains the examples and demos explaines in the article
+This repository contains the examples and demos explained in the article
 [How to create ArgoCD Applications Automatically using ApplicationSet? “Automation of the Gitops”](https://amralaayassen.medium.com/how-to-create-argocd-applications-automatically-using-applicationset-automation-of-the-gitops-59455eaf4f72)
 
 
